@@ -1,0 +1,52 @@
+body {
+    background-image: linear-gradient(to right, #093028, #237a57);
+}
+
+div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+div h1 {
+    color: beige;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+div div h3{
+    font-weight: normal;
+}
+
+div div{
+    color: beige;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    letter-spacing: 1.5px;
+    line-height: 2em;
+}
+
+#vote,#view{
+    background-color: transparent;
+    color: antiquewhite;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    border:1px antiquewhite solid;
+}
+
+#btn{
+    display: inline-block;
+}
+
+#vote:hover{
+    color: orange;
+}
+
+#view:hover{
+    color: orange;
+}

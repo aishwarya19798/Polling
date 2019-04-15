@@ -1,0 +1,53 @@
+body {
+    background-image: linear-gradient(to right, #093028, #237a57);
+    color: antiquewhite;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+div h1 {
+    color: beige;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+.button {
+    background-color: transparent;
+    color: antiquewhite;
+    letter-spacing: 1px;
+    border: 1px antiquewhite solid;
+    font-size: 18px;
+    padding: .7em;
+    margin: .9em;
+    text-decoration: none;
+}
+
+.button:hover {
+    color: orange;
+}
+
+td{
+    font-size: 18px;
+    padding: .8em;
+}
+h2{
+    font-weight: normal;
+    letter-spacing: 1.5px;
+}
+
+fieldset a {
+    text-decoration: none;
+    color: antiquewhite;
+    letter-spacing: 1.5px;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+fieldset a:hover{
+    color: orange;
+}

@@ -1,0 +1,30 @@
+div b {
+    color: burlywood;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1.5px;
+}
+
+form b {
+    color: antiquewhite;
+    font-weight: normal;
+    line-height: 1.5em;
+}
+
+form ul li {
+    color: azure;
+    list-style-type: circle;
+}
+
+form input {
+    border: 0px;
+}
+
+form #add {
+    float: right;
+}
