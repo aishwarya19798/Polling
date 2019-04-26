@@ -22,9 +22,10 @@
         <fieldset id="#share">
             Share this link: <a id=vote></a>
             <br>
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-whatsapp"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
+            <!-- <a href="#"><i class="fa fa-facebook"></i></a> -->
+            <!-- <a href="#"><i class="fa fa-whatsapp"></i></a> -->
+            <a id="whatsapp" href="whatsapp://send?text=vote at null" data-action="share/whatsapp/share"><i class="fa fa-whatsapp"></i></a>
+            <!-- <a href="#"><i class="fa fa-instagram"></i></a> -->
         </fieldset>
         <a class="button" href="index.html">
             Create More Polls
@@ -39,6 +40,7 @@
             if (id) {
                 document.querySelector("#vote").innerHTML = url;
                 document.querySelector("#vote").setAttribute("href", url);
+                document.querySelector("#whatsapp").setAttribute("href", `whatsapp://send?text=vote at ${url}`);
             } else document.querySelector("#vote").innerHTML = 'Try again';
         }
         showLink();
