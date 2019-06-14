@@ -1,36 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Polling</title>
-    <link rel="stylesheet" href="style/common.css">
-    <link rel="stylesheet" href="style/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="./ext.js"></script>
 </head>
-
 <body>
-    <div>
-        <h1>Instantly create a <b>Free Poll!</b></h1>
-        <form>
-            <fieldset>
-                <legend>
-                    <b>Type your poll question here:</b>
-                    <input type="text" id="question">
-                </legend>
-                <legend>
-                    <b>Add upto 10 possible answers to your question:</b>
-                    <ul id="field">
-                    </ul>
-                    <input class="button" type="button" id="add" value="+Add field" onclick="addfield()">
-                </legend>
-            </fieldset><br>
-            <input class="button" type="button" id="poll" value="Create your Poll">
-        </form>
-    </div>
-    <script src="script/script.js"></script>
-    <script src="script/index.js"></script>
-</body>
+    <form>
+        <pre>
 
+            Question :  <input type="text" id="ques"><br><br>
+            options  :  <input type="text" id="op1"><br><br>
+                        <input type="text" id="op2"><br><br>
+                        <input type="text" id="op3"><br><br>
+                        <input type="button" value="Submit" onclick="createPoll()">
+
+        </pre>
+    </form>
+</body>
 </html>

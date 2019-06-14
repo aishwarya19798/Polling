@@ -1,41 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Polling</title>
-    <link rel="stylesheet" href="style/view.css">
-    <link rel="stylesheet" href="style/common.css">
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="./ext.js"></script>
 </head>
-
 <body>
-    <div>
-        <h1>Polling Result</h1>
-        <h2 id="ques"></h2>
-        <table>
-            <tbody id="result"> </tbody>
-        </table>
-        <a class="button" id="voteMore">Vote More</a>
-        <a class="button" href="/">Create More Poll</a>
-    </div>
-
-    <script src="script/script.js"></script>
+    <pre>
+            <h1 id="ques"></h1>
+            <h3 id="options"></h3>
+    </pre>
     <script>
-        const id = getVoteIdFromQuery();
-        getPoll(id).then((data) => {
-            document.querySelector("#ques").innerText = data.ques;
-            let allHtml = '';
-            data.options.forEach(option => {
-                const html = `<tr><td>${option.name}</td><td>${option.value}</td></tr>`;
-                allHtml += html;
-            });
-            document.querySelector("#result").innerHTML = allHtml;
-        })
-
-        document.querySelector("#voteMore").setAttribute("href", `/vote.html?id=${getVoteIdFromQuery()}`);
+        getPoll();
     </script>
 </body>
-
 </html>
